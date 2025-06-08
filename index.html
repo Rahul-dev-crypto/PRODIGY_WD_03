@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="background">
+        <section class="title">
+            <h1>Tic Tac Toe</h1>
+        </section>
+
+
+        <section class="controls">
+            <button id="mode-human">Play With a Friend</button>
+            <button id="mode-ai">Play Against AI</button>
+        </section>
+
+        <section class="display">
+            Player <span class="display-player playerX">X</span>'s turn
+        </section>
+
+        <section class="container">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </section>
+
+        <section class="display announcer hide"></section>
+
+        <section class="controls">
+            <button id="reset">Reset</button>
+        </section>
+    </main>
+
+    <!-- Sounds -->
+    <audio id="click-sound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_5d22f3dd34.mp3"></audio>
+    <audio id="win-sound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_368d7e3ff4.mp3"></audio>
+
+    <script src="index.js"></script>
+</body>
+</html>
